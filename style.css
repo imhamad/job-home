@@ -1,0 +1,48 @@
+header{
+    margin:2em auto;
+    text-align: center;
+}
+.jobnelly-logo-home{
+    padding: 2em;
+    max-width: 340px;
+    text-align: center;
+    margin: 0 auto;
+}
+/* CSS used here will be applied after bootstrap.css */.btn-input {
+                                                           display: block;
+                                                       }
+
+.btn-input .btn.form-control {
+    text-align: left;
+}
+
+.btn-input .btn.form-control span:first-child {
+    left: 10px;
+    overflow: hidden;
+    position: absolute;
+    right: 25px;
+}
+
+.btn-input .btn.form-control .caret {
+    margin-top: -1px;
+    position: absolute;
+    right: 10px;
+    top: 50%;
+}
+.setting{
+    max-width: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.open>.dropdown-menu {
+    display: block;
+    margin: 0 auto;
+    min-width: 100%;
+}
+.footer-custom{
+    background: #cecece;
+}
+.text-center{
+    text-align: center;
+    padding: 1em;
+}

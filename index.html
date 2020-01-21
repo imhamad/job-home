@@ -1,0 +1,76 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet"/>
+    <script src="http://netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+    <link href="http://fontawesome.io/assets/font-awesome/css/font-awesome.css" rel="stylesheet"/>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/flag-icon-css/0.8.2/css/flag-icon.min.css" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css">
+
+    <link rel="stylesheet" href="style.css">
+
+    <title>Jobnelly Homepage</title>
+    <script>
+        $( document.body ).on( 'click', '.dropdown-menu li', function( event ) {
+
+            var $target = $( event.currentTarget );
+
+            $target.closest( '.btn-group' )
+                .find( '[data-bind="label"]' ).text( $target.text() )
+                .end()
+                .children( '.dropdown-toggle' ).dropdown( 'toggle' );
+
+            return false;
+
+        });
+    </script>
+</head>
+<body>
+<header class="container">
+    <img src="assets/jobnelly.png" alt="Jobnelly Image &reg;" class="jobnelly-logo-home ma-auto">
+</header>
+
+<div class=" setting">
+    <div class="row">
+        <div class="col-md-12">
+            <div class="">
+                <div class="panel-body">
+                    <div class="btn-group">
+                        <button type="button" class="btn btn-default dropdown-toggle" data-toggle="dropdown">
+                            <span data-bind="label">Select Country for Jobs Opportunities</span>&nbsp;<span class="caret"></span>
+                        </button>
+                        <ul class="dropdown-menu" role="menu">
+                            <li><a href="http://dev.jobnelly.com"><i class="fab fa-canadian-maple-leaf"></i>Canada</a></li>
+                            <li><a href="http://dev.jobnelly.com"><i class="fa fa-flag fa-fw"></i>United Kingdom</a></li>
+                            <li><a href="http://dev.jobnelly.com"><i class="fa fa-flag fa-fw"></i>United States</a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+<div class="row" style="text-align: center">
+    <br>
+    <div class="col-md-1"></div>
+    <div class="col-md-4"><img src="assets/service-left-image.png" alt="" class="img img-responsive"></div>
+    <div class="col-md-2"></div>
+    <div class="col-md-4"><img src="assets/man_img.png" alt="" class="img img-responsive"></div>
+</div>
+<br><br><br><br><br>
+<footer class="footer-custom">
+<div class="text-center">
+
+    <h5 style="color:#fff;">&copy; All Right Reserved Jobnelly 1999-2020</h5>
+</div>
+</footer>
+<script src="code.js"></script>
+</body>
+</html>
